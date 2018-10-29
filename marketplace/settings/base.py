@@ -26,6 +26,8 @@ SECRET_KEY = config('SECRET_KEY')
 
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
+    'users.apps.UsersConfig',
+    # 'categories.apps.CategoriesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,6 +79,9 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+# https://docs.djangoproject.com/en/dev/ref/settings/#auth-user-model
+AUTH_USER_MODEL = 'users.User'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
