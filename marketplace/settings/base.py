@@ -25,7 +25,6 @@ SECRET_KEY = config('SECRET_KEY')
 # Application definition
 
 INSTALLED_APPS = [
-    # 'categories.apps.CategoriesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -37,7 +36,7 @@ INSTALLED_APPS = [
     # My Apps
     'pages.apps.PagesConfig',
     'users.apps.UsersConfig',
-
+    'categories.apps.CategoriesConfig',
 ]
 
 MIDDLEWARE = [
