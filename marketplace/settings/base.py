@@ -25,8 +25,6 @@ SECRET_KEY = config('SECRET_KEY')
 # Application definition
 
 INSTALLED_APPS = [
-    'pages.apps.PagesConfig',
-    'users.apps.UsersConfig',
     # 'categories.apps.CategoriesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -35,6 +33,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+
+    # My Apps
+    'pages.apps.PagesConfig',
+    'users.apps.UsersConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -82,6 +85,10 @@ USE_TZ = True
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-user-model
 AUTH_USER_MODEL = 'users.User'
+
+# Redirect routes
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
