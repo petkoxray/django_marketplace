@@ -21,7 +21,7 @@ class Ad(models.Model):
     phone = models.IntegerField()
     facebook = models.CharField(max_length=200)
     photo_main = models.ImageField(upload_to='images/ads/images/ads/%Y/%m/%d/',
-                                   default='ads/default.jpg', blank=True)
+                                   default='images/ads/default.jpg', blank=True)
     photo_1 = models.ImageField(upload_to='images/ads/%Y/%m/%d/', blank=True)
     photo_2 = models.ImageField(upload_to='images/ads/%Y/%m/%d/', blank=True)
     photo_3 = models.ImageField(upload_to='images/ads/%Y/%m/%d/', blank=True)

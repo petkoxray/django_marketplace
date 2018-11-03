@@ -1,5 +1,5 @@
 condition_choices = (
-    ('', 'Condition'),
+    (None, 'Condition'),
     ('new', 'New'),
     ('used', 'Used'),
 )
